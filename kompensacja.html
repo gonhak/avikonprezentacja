@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Title -->
+    <title>Avikon - Kompensacja</title>
+    <!-- Icon -->
+    <link rel="icon" href="img/favicon.png" />
+    <!-- GoogleFonts CSS CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Dedicated Css Files -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/compensation.min.css" />
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navigation"
+    data-bs-root-margin="0px 0px -40% 0px"
+    smoothScroll="true"
+  >
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbarNavAltMarkup"
+      data-bs-root-margin="0px 0px -40% 0px"
+      smoothScroll="true"
+      class="secondBody"
+    >
+      <!-- Navigation -->
+      <nav id="navigation" class="navbar fixed-top navbar-expand-md bg-body-tertiary">
+  <!-- Mobile Navigation -->
+  <div class="contentContainer container-fluid px-4 d-md-none">
+  <!-- Company Logo -->
+  <a class="contentContainer__navlink navbar-brand" href="index.html">
+    <img
+      src="./img/Avikon.png"
+      alt="Logo Firmy Avikon"
+      class="contentContainer__navlink__logo"
+      width="115"
+      height="auto"
+    />
+  </a>
+  <!-- Nav Button -->
+  <button
+    class="contentContainer__navButton navbar-toggler collapsed"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <i class="contentContainer__navButton__icon bi bi-list"></i>
+  </button>
+
+  <!-- Nav Links -->
+  <div
+    class="contentContainer__navContainer collapse navbar-collapse"
+    id="navbarNavAltMarkup"
+    role="tablist"
+  >
+    <div class="contentContainer__navContainer__list navbar-nav">
+      <a
+        href="#aboutUs"
+        class="contentContainer__navContainer__list__element nav-link my-3 active"
+        >O FIRMIE</a
+      >
+      <a
+        href="#orderStages"
+        class="contentContainer__navContainer__list__element nav-link my-3"
+        >PROJEKTY</a
+      >
+      <a
+        href="#contact"
+        class="contentContainer__navContainer__list__element nav-link my-3"
+        >KONTAKT</a
+      >
+      <a
+        href="#work"
+        class="contentContainer__navContainer__list__element nav-link my-3"
+        >PRACA</a
+      >
+    </div>
+  </div>
+</div>
+
+
+  <!-- Desktop Navigation -->
+  <div   class="desktopContainer container-fluid">
+  <div class="container d-none d-md-flex justify-content-between px-0 py-1">
+    <!-- Company Logo -->
+    <a class="desktopContainer__navLink navbar-brand" href="index.html">
+      <img
+        src="./img/Avikon.png"
+        alt="Logo Firmy Avikon"
+        width="150"
+        height="auto"
+        class="desktopContainer__navLink__logo"
+      />
+    </a>
+    <!-- Nav Links Desktop -->
+
+    <div class="desktopContainer__navBar navbar-nav" role="tablist">
+      <a
+        class="desktopContainer__navBar__Link mx-2 px-3 py-2 nav-link active"
+        aria-current="page"
+        href="#aboutUs"
+        >O firmie</a
+      >
+      <a
+        class="desktopContainer__navBar__Link mx-2 px-3 py-2 nav-link"
+        href="#orderStages"
+        >Projekty</a
+      >
+      <a
+        class="desktopContainer__navBar__Link mx-2 px-3 py-2 nav-link"
+        href="#contact"
+        >Kontakt</a
+      >
+      <a
+        class="desktopContainer__navBar__Link mx-2 px-3 py-2 nav-link"
+        href="#work"
+        >Praca</a
+      >
+
+      <!-- Przyciski -->
+      <a
+        href="https://www.facebook.com/P.P.H.U.AVIKON/?locale=pl_PL"
+        target="_blank"
+        class="btn mx-2 desktopContainer__navBar__LinkBtn"
+        >Facebook</a
+      >
+      <a
+        href="shop.html"
+        class="btn btn-outline-secondary mx-2 desktopContainer__navBar__LinkBtn desktopContainer__navBar__LinkBtn--disabled"
+        >Sklep</a
+      >
+    </div>
+  </div>
+</div>
+
+</nav>
+
+
+      <!-- Header section -->
+      <header class="subHeaderSection py-5 container-fluid">
+  <div
+    class="subHeaderSection__headers container d-flex flex-column align-items-center py-md-3"
+  >
+    <h1 class="subHeaderSection__header">SPRAWDŹ NASZE ODPOWIEDZI</h1>
+    <h2 class="subHeaderSection__subHeader mb-4">
+      NA WSZYSTKIE NURTUJĄCE WAS PYTANIA
+    </h2>
+    <p class="subHeaderSection__text">
+      Odkryj pełnię naszej oferty poprzez dedykowaną podstronę, gdzie wyjaśnimy
+      kluczowe aspekty mocy biernej. Sprawdź, jak nasze rozwiązania mogą
+      przynieść potencjalne oszczędności. Jeśli masz pytania, jesteśmy do Twojej
+      dyspozycji!
+    </p>
+
+    <a href="#contact" class="subHeaderSection__button mt-2">KONTAKT</a>
+  </div>
+</header>
+
+
+      <main class="main">
+        <!-- Fees from compensation -->
+        <section class="py-5 container-fluid d-flex flex-column align-items-center">
+  <!-- Headers -->
+  <div class="container d-flex flex-column align-items-center pb-3">
+    <h3>Czy ponoszę opłaty za moc bierną?</h3>
+    <h4 class="mb-md-4">SPRAWDŹ JUŻ TERAZ WRAZ Z NAMI</h4>
+  </div>
+
+  <!-- Content -->
+  <div
+    class="container d-flex flex-wrap align-items-center justify-content-evenly"
+  >
+    <!-- Card #1 -->
+    <div class="d-flex flex-column align-items-center my-3">
+      <i class="bi bi-question-circle-fill"></i>
+      <h5>JAK TO SPRAWDZIĆ</h5>
+      <p>
+        Wystarczy, że spojrzysz na fakturę za rozliczenie energii elektrycznej.
+        Na jej podstawie możesz dowiedzieć się, czy ponosisz opłaty za moc
+        bierną na swoim rachunku za energię elektryczną. Skonfrontuj swoje
+        koszty i zacznij oszczędzać pieniądze!
+      </p>
+    </div>
+
+    <!-- Card #2 -->
+    <div class="d-flex flex-column align-items-center my-3">
+      <i class="bi bi-people-fill"></i>
+      <h5>SPRAWDZIĆ TO ZA CIEBIE</h5>
+      <p>
+        Czy faktura wydaje się dla Ciebie niejasna? Nie martw się! Naszym
+        specjalistom możesz powierzyć to zadanie. Prześlij nam swoją fakturę za
+        prąd, a my bezpłatnie sprawdzimy, czy masz problem z opłatami za moc
+        bierną. Oszczędzaj bez zbędnych wydatków już dziś!
+      </p>
+    </div>
+  </div>
+</section>
+
+
+        <!-- Kalkulator !!!!! -->
+
+        <!-- Selection section -->
+        <section class="py-5 container-fluid d-flex flex-column align-items-center">
+  <!-- Headers -->
+  <div class="container d-flex flex-column align-items-center pb-3">
+    <h3>DOBÓR KOMPENSATORA POD TWOJE POTRZEBY</h3>
+    <h4 class="mb-md-4">
+      DOPASUJEMY KOMPENSATOR WZGLĘDEM INDYWIDUALNYCH POTRZEB
+    </h4>
+  </div>
+
+  <!-- Content -->
+  <div
+    class="container d-flex flex-wrap align-items-start justify-content-evenly"
+  >
+    <!-- Card #1 -->
+    <div class="d-flex flex-column align-items-center my-3">
+      <i class="bi bi-wallet-fill"></i>
+      <h5>ZMINIMALIZUJ KOSZTY</h5>
+      <p>
+        Odkryj nasze kompleksowe usługi doboru kompensatora mocy biernej,
+        idealne dla Twojej firmy. Nasi eksperci analizują Twoją instalację, by
+        dobrać optymalny kompensator. Skupiamy się na dwóch aspektach:
+        oszczędnościach kosztów i optymalizacji efektywności energetycznej. Z
+        nami, Twoja energia działa dla Ciebie!
+      </p>
+    </div>
+
+    <!-- Card #2 -->
+    <div class="d-flex flex-column align-items-center my-3">
+      <i class="bi bi-bar-chart-line-fill"></i>
+      <h5>WYŻSZA WYDAJNOŚĆ</h5>
+      <p>
+        Nasza firma specjalizuje się w kompleksowym doborze kompensatora mocy
+        biernej dla Twojego biznesu. Nasz zespół ekspertów analizuje Twoją
+        instalację, aby wybrać idealny kompensator. Skupiamy się na dwóch
+        kluczowych celach: obniżeniu kosztów i zwiększeniu efektywności
+        energetycznej. Gotowi służyć Ci technicznym wsparciem i profesjonalnym
+        doradztwem.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+        <!-- Benefits section -->
+        <section class="py-5 container-fluid d-flex flex-column align-items-center">
+  <!-- Headers -->
+  <div class="container d-flex flex-column align-items-center pb-3">
+    <h3>DOBÓR KOMPENSATORA POD TWOJE POTRZEBY</h3>
+    <h4 class="mb-md-4">
+      DOPASUJEMY KOMPENSATOR WZGLĘDEM INDYWIDUALNYCH POTRZEB
+    </h4>
+  </div>
+
+  <!-- Content -->
+  <div
+    class="container d-flex flex-wrap align-items-start justify-content-evenly"
+  >
+    <!-- Card #1 -->
+    <div class="d-flex flex-column align-items-center my-3">
+      <i class="bi bi-currency-exchange"></i>
+      <h5>Oszczędności</h5>
+      <p class="smaller">
+        Dzięki kompensacji mocy biernej, redukujesz ilość mocy biernej
+        pobieranej przez urządzenia, co skutkuje niższymi opłatami za zużytą
+        energię elektryczną.
+      </p>
+    </div>
+
+    <!-- Card #2 -->
+    <div class="d-flex flex-column align-items-center my-3">
+      <i class="bi bi-pie-chart-fill"></i>
+      <h5>EFEKTYWNOŚĆ</h5>
+      <p class="smaller">
+        Technologia kompensacji mocy biernej przyczynia się do optymalnego
+        wykorzystania energii elektrycznej, co poprawia ogólną efektywność
+        działania systemu elektrycznego.
+      </p>
+    </div>
+
+    <!-- Card #3 -->
+    <div class="d-flex flex-column align-items-center my-3">
+      <i class="bi bi-caret-down-square-fill"></i>
+      <h5>MINIMALIZACJA STRAT</h5>
+      <p class="smaller">
+        Poprzez eliminację mocy biernej, zmniejszasz straty energii na
+        przewodach i urządzeniach, co wpływa na poprawę wydajności i wydłużenie
+        ich żywotności.
+      </p>
+    </div>
+
+    <!-- Card #4 -->
+    <div class="d-flex flex-column align-items-center my-3">
+      <i class="bi bi-wifi-off"></i>
+      <h5>STABILNOŚĆ</h5>
+      <p class="smaller">
+        Kompensacja mocy biernej przyczynia się do utrzymania stabilnego
+        napięcia w sieci, co może zapobiec awariom i uszkodzeniom sprzętu
+      </p>
+    </div>
+
+    <!-- Card #5 -->
+    <div class="d-flex flex-column align-items-center my-3">
+      <i class="bi bi-cloud-arrow-up-fill"></i>
+      <h5>PRZEPUSTOWOŚĆ</h5>
+      <p class="smaller">
+        Redukcja mocy biernej umożliwia wykorzystanie dostępnej mocy w bardziej
+        efektywny sposób, co może prowadzić do zwiększenia przepustowości całego
+        systemu.
+      </p>
+    </div>
+
+    <!-- Card #6 -->
+    <div class="d-flex flex-column align-items-center my-3">
+      <i class="bi bi-tree-fill"></i>
+      <h5>NORMY</h5>
+      <p class="smaller">
+        Wykorzystanie technologii kompensacji mocy biernej może pomóc w
+        spełnieniu wymagań dotyczących jakości energii elektrycznej, co jest
+        istotne zgodnie z obowiązującymi przepisami.
+      </p>
+    </div>
+
+    <!-- Card #7 -->
+    <div class="d-flex flex-column align-items-center my-3">
+      <i class="bi bi-house-down-fill"></i>
+      <h5>REDUKCJA EMISJI</h5>
+      <p class="smaller">
+        Efektywniejsze korzystanie z energii elektrycznej dzięki kompensacji
+        mocy biernej może przyczynić się do zmniejszenia zużycia paliw kopalnych
+        i emisji gazów cieplarnianych.
+      </p>
+    </div>
+
+    <!-- Card #8 -->
+    <div class="d-flex flex-column align-items-center my-3">
+      <i class="bi bi-building-fill-up"></i>
+      <h5>WYDAJNOŚĆ</h5>
+      <p class="smaller">
+        Mniejsza ilość mocy biernej pozwala na lepsze wykorzystanie potencjału
+        urządzeń elektrycznych, co może przełożyć się na ich lepszą wydajność i
+        dłuższą żywotność.
+      </p>
+    </div>
+
+    <!-- Card #9 -->
+    <div class="d-flex flex-column align-items-center my-3">
+      <i class="bi bi-calendar2-check-fill"></i>
+      <h5>JAKOŚĆ</h5>
+      <p class="smaller">
+        Stabilne napięcie i efektywne wykorzystanie energii elektrycznej mogą
+        przekładać się na bardziej niezawodną pracę urządzeń i systemów.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+        <!-- Explenation section -->
+        <section class="py-5 container-fluid d-flex flex-column align-items-center">
+  <!-- Headers -->
+  <div class="container d-flex flex-column align-items-center pb-3">
+    <h3>TEMAT KOMPENSACJI JEST CI OBCY</h3>
+    <h4 class="mb-md-4">ZAPOZNAJ SIĘ Z PONIŻSZYMI ABY TO ZMIENIĆ</h4>
+  </div>
+
+  <!-- Content -->
+  <div
+    class="container d-flex flex-wrap align-items-center justify-content-evenly"
+  >
+    <!-- Card #1 -->
+    <div class="d-flex flex-column align-items-center my-3">
+      <i class="bi bi-lightning-charge-fill"></i>
+      <h5>CZYM JEST MOC BIERNA</h5>
+      <p>
+        Moc bierna, choć niewidoczna, pełni kluczową rolę dla urządzeń domowych.
+        Jej wpływ na wydajność systemów elektroenergetycznych jest niezwykle
+        istotny, jednak nadmiar prowadzi do zbędnych kosztów jak mogłeś
+        przekonać się wcześniej. Skontaktuj się z nami i zacznij oszczędzać
+        inteligentnie wykorzystując kompensację.
+      </p>
+    </div>
+
+    <!-- Card #2 -->
+    <div class="d-flex flex-column align-items-center my-3">
+      <i class="bi bi-battery-charging"></i>
+      <h5>NA CZYM POLEGA KOMPENSACJA</h5>
+      <p>
+        Oszczędzanie na energii to proste, jeśli zastosujesz kompensację mocy
+        biernej. Dzięki temu ograniczysz koszty i poprawisz wydajność swojego
+        zakładu, minimalizując straty energii w sieci. Skontaktuj się z nami i
+        dowiedz się, jak to działa, i zacznij oszczędzać z nami już dziś!
+      </p>
+    </div>
+  </div>
+</section>
+
+
+        <!-- Galeria !!!!! -->
+
+        <!-- Contact Form -->
+        <div id="contact">
+          <section class="contactForm container-fluid d-flex flex-column py-5 px-0">
+  <!-- Nagłówki -->
+  <div class="container d-flex flex-column py-3 mb-4">
+    <h3 class="contactForm__tittle pb-1">POSIADASZ DO NAS JAKIEŚ PYTANIA</h3>
+    <h4 class="contactForm__subTittle pb-2 pb-sm-0">
+      NIE KRĘPUJ SIĘ I WYŚLIJ DO NAS WIADOMOŚĆ
+    </h4>
+  </div>
+  <!-- Formularz -->
+  <form
+    class="contactForm__form container d-flex flex-column align-items-center align-items-md-start justify-content-evenly py-3"
+  >
+    <!-- Text -->
+    <div
+      class="mb-3 contactForm__form__emailContainer d-flex flex-column align-items-center align-items-md-start justify-content-evenly"
+    >
+      <!-- Email -->
+      <label
+        for="email"
+        class="contactForm__form__emailContainer__header form-label"
+        >Adres Email</label
+      >
+      <input
+        type="email"
+        class="form-control py-2 mt-2"
+        required
+        id="email"
+        placeholder="Twój adres email..."
+      />
+    </div>
+
+    <!-- Text -->
+    <div
+      class="mb-3 contactForm__form__emailContainer d-flex flex-column align-items-center align-items-md-start justify-content-evenly"
+    >
+      <!-- Email -->
+      <label
+        for="topic"
+        class="contactForm__form__emailContainer__header form-label"
+        >Temat</label
+      >
+      <input
+        type="text"
+        class="form-control py-2 mt-2"
+        id="topic"
+        required
+        placeholder="Podaj temat rozmowy..."
+      />
+    </div>
+    <!-- Message -->
+    <div
+      class="mb-3 contactForm__form__messageContainer d-flex flex-column align-items-center align-items-md-start justify-content-evenly"
+    >
+      <label
+        for="message"
+        class="contactForm__form__messageContainer__header form-label"
+        >Wiadomość</label
+      >
+      <textarea
+        class="form-control py-2 mt-2"
+        required
+        id="message"
+        placeholder="Twoja wiadomość..."
+        rows="2"
+      ></textarea>
+    </div>
+
+    <!-- Rodo -->
+    <div class="contactForm__form__rodo form-check form-switch my-2">
+      <input
+        class="contactForm__form__rodo__switch form-check-input"
+        type="checkbox"
+        role="switch"
+        required
+        id="flexSwitchCheckDefault"
+      />
+      <label
+        class="contactForm__form__rodo__text form-check-label text-muted"
+        for="flexSwitchCheckDefault"
+      >
+        Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o
+        ochronie danych osobowych w związku z ( np. realizacją zgłoszenia).
+        Podanie danych jest dobrowolne, ale niezbędne do przetworzenia
+        zapytania. Zostałem /am poinformowany /a, że przysługuje mi prawo
+        dostępu do swoich danych, możliwości ich poprawiania, żądania
+        zaprzestania ich przetwarzania. Administratorem danych osobowych jest
+        [pełna nazwa firmy] z siedzibą [adres firmy].</label
+      >
+    </div>
+
+    <!-- Submit btn -->
+
+    <button class="btn contactForm__form__send">WYŚLIJ</button>
+  </form>
+</section>
+
+        </div>
+      </main>
+
+      <!-- Footer Section -->
+      <footer
+  class="container-fluid d-flex justify-content-center align-items-center"
+>
+  <div
+    class="container row row-cols-1 row-cols-md-2 row-cols-xl-6 py-5 my-5 border-top"
+  >
+    <div class="col mb-3">
+      <a
+        href="index.html"
+        class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+      >
+        <img
+          src="./img/Avikon.png"
+          alt="Logo Firmy Avikon"
+          class="contentContainer__navlink__logo"
+          width="115"
+          height="auto"
+        />
+      </a>
+      <p class="text-body-secondary">Avikon© 2024</p>
+    </div>
+
+    <div class="col mb-3"></div>
+
+    <div class="col mb-3">
+      <h5 class="footer__listContainer__element__header">Kontakt</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2">
+          <a href="mailto: biuro@avikon.com" class="nav-link p-0 text-body-secondary"
+            >biuro@avikon.com</a
+          >
+        </li>
+        <li class="nav-item mb-2">
+          <a href="tel: +48 32 757 11 06" class="nav-link p-0 text-body-secondary"
+            >+48 32 757 11 06</a
+          >
+        </li>
+        <li class="nav-item mb-2">
+          <a href="tel: +48 505 700 878" class="nav-link p-0 text-body-secondary"
+            >+48 505 700 878</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5 class="footer__listContainer__element__header">Adres</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2">
+          <a href="https://maps.app.goo.gl/fdZfHyhsZPJsHeL69" class="nav-link p-0 text-body-secondary"
+            >ul. Wyzwolenia 57, 41-707 Ruda Śląska
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5 class="footer__listContainer__element__header">Oferta</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2">
+          <a href="#offer" class="nav-link p-0 text-body-secondary">Projektowanie</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#offer" class="nav-link p-0 text-body-secondary">Energetyka</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#offer" class="nav-link p-0 text-body-secondary">Teletechnika</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#offer" class="nav-link p-0 text-body-secondary">Fotowoltaika</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#offer" class="nav-link p-0 text-body-secondary"
+            >Zabezpieczenia i monitoring</a
+          >
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#offer" class="nav-link p-0 text-body-secondary"
+            >Kompensacja mocy biernej</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5 class="footer__listContainer__element__header">Współpracujemy z</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">Netflix</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">Disney</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">Spotify</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">Apple</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">Samsung</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Bootstrap JS Scripts CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
