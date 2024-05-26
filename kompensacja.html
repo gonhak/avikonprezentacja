@@ -162,7 +162,7 @@
       <!-- Header section -->
       <header class="subHeaderSection py-5 container-fluid">
   <div
-    class="subHeaderSection__headers container d-flex flex-column align-items-center py-md-3"
+    class="subHeaderSection__headers container d-flex flex-column align-items-center pt-md-5"
   >
     <h1 class="subHeaderSection__header">SPRAWDŹ NASZE ODPOWIEDZI</h1>
     <h2 class="subHeaderSection__subHeader mb-4">
@@ -219,8 +219,250 @@
   </div>
 </section>
 
-
+        
         <!-- Kalkulator !!!!! -->
+        <section
+  class="py-5 container-fluid d-flex flex-column align-items-center mt-3"
+>
+  <!-- Headers -->
+  <div class="container d-flex flex-column align-items-center pb-3">
+    <h3>PONOSISZ ZBĘDNE KOSZTY, SKORZYSTAJ Z NASZEGO KALKULATORA</h3>
+    <h4 class="mb-md-4">
+      OBLICZ POTENCJALNE OSZCZĘDNOŚCI Z NASZYMI ROZWIĄZANIAMI
+    </h4>
+  </div>
+
+  <!-- Content -->
+  <div
+    class="container calculator d-flex flex-wrap align-items-start justify-content-center"
+  >
+    <!-- Score -->
+
+    <div class="calculator__results"></div>
+
+    <!-- Calculator inputs -->
+    <div
+      class="calculator__data d-flex flex-column align-items-center justify-content-evenly m-3 mx-5"
+    >
+      <h5 class="my-3">WPROWADŹ DANE</h5>
+      <input
+        class="calculator__data__input my-3"
+        type="number"
+        placeholder="Wartość skuteczna napięcia (V)"
+      />
+      <input
+        class="calculator__data__input my-4"
+        type="number"
+        placeholder="Wartość skuteczna prądu (I) "
+      />
+      <input
+        class="calculator__data__input my-4"
+        type="number"
+        placeholder="Koszty reaktywacyjne* "
+      />
+      <input
+        class="calculator__data__input my-4"
+        type="number"
+        placeholder="Cena energii elektrycznej "
+      />
+      <input
+        class="calculator__data__input my-4"
+        type="number"
+        placeholder="Przesunięcie fazowe (φ) "
+      />
+      <button type="button" class="btn calculator__data__button my-3">
+        OBLICZ
+      </button>
+    </div>
+
+    <!-- Calculator Legend -->
+    <div
+      class="calculator__legend d-flex flex-column align-items-center justify-content-evenly m-3 mx-5"
+    >
+      <h5 class="my-3">LEGENDA KALKULATORA</h5>
+
+      <div
+        class="accordion calculator__legend__accordion mt-3"
+        id="calculatorLegend"
+      >
+        <!-- First Element -->
+        <div class="accordion-item calculator__legend__accordion__item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button text-center calculator__legend__accordion__item__header py-4"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Wartość skuteczna napięcia (V)
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#calculatorLegend"
+          >
+            <div
+              class="accordion-body calculator__legend__accordion__item__text py-4"
+            >
+              W większości domowych instalacji wartość napięcia to 230V, ale
+              warto to potwierdzić na podstawie lokalnych standardów.
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Element -->
+        <div class="accordion-item calculator__legend__accordion__item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button calculator__legend__accordion__item__header py-4 collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Wartość skuteczna prądu (I)
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#calculatorLegend"
+          >
+            <div
+              class="accordion-body calculator__legend__accordion__item__text py-4"
+            >
+              Wartość prądu zostanie podana na fakturze jako "zużycie prądu" lub
+              "energia pobrana".
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Element -->
+        <div class="accordion-item calculator__legend__accordion__item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button calculator__legend__accordion__item__header py-4 collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Koszty reaktywacyjne (jeśli dotyczy)
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#calculatorLegend"
+          >
+            <div
+              class="accordion-body calculator__legend__accordion__item__text py-4"
+            >
+              Jeśli na fakturze występują koszty reaktywacyjne, powinieneś
+              znaleźć tę informację. To może być wyrażone jako opłata za każdy
+              var (PLN/var) lub podobnie.
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth Element -->
+        <div class="accordion-item calculator__legend__accordion__item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button calculator__legend__accordion__item__header py-4 collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              Cena energii elektrycznej
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#calculatorLegend"
+          >
+            <div
+              class="accordion-body calculator__legend__accordion__item__text py-4"
+            >
+              Wartość energii elektrycznej jest zwykle podawana jako cena za
+              kilowatogodzinę (kWh). To jest wartość, która jest zwykle widoczna
+              na fakturze jako "cena energii" lub podobne określenie.
+            </div>
+          </div>
+        </div>
+
+        <!-- Fifth Element -->
+        <div class="accordion-item calculator__legend__accordion__item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button calculator__legend__accordion__item__header py-4 collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              Przesunięcie fazowe (φ)
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#calculatorLegend"
+          >
+            <div
+              class="accordion-body calculator__legend__accordion__item__text py-4"
+            >
+              W większości przypadków w gospodarstwach domowych przesunięcie
+              fazowe jest zwykle bliskie zeru (0 stopni). Jednak, jeśli jesteś w
+              stanie uzyskać tę informację, możesz ją uwzględnić.
+            </div>
+          </div>
+        </div>
+
+        <!-- Sixth Element -->
+        <div class="accordion-item calculator__legend__accordion__item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button calculator__legend__accordion__item__header py-4 collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              POTRZEBUJĘ POMOCY
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            data-bs-parent="#calculatorLegend"
+          >
+            <div
+              class="accordion-body calculator__legend__accordion__item__text py-4"
+            >
+              <a href="#contact" class="btn calculator__data__button my-3"
+                >KONTAKT</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        
 
         <!-- Selection section -->
         <section class="py-5 container-fluid d-flex flex-column align-items-center">
@@ -270,10 +512,8 @@
         <section class="py-5 container-fluid d-flex flex-column align-items-center">
   <!-- Headers -->
   <div class="container d-flex flex-column align-items-center pb-3">
-    <h3>DOBÓR KOMPENSATORA POD TWOJE POTRZEBY</h3>
-    <h4 class="mb-md-4">
-      DOPASUJEMY KOMPENSATOR WZGLĘDEM INDYWIDUALNYCH POTRZEB
-    </h4>
+    <h3>KORZYŚCI Z KOMPENSACJI MOCY BIERNEJ</h3>
+    <h4 class="mb-md-4">DOWIEDZ SIĘ CO MOŻESZ Z NAMI ZYSKAĆ</h4>
   </div>
 
   <!-- Content -->
@@ -457,7 +697,7 @@
 
     <!-- Text -->
     <div
-      class="mb-3 contactForm__form__emailContainer d-flex flex-column align-items-center align-items-md-start justify-content-evenly"
+      class="my-3 contactForm__form__emailContainer d-flex flex-column align-items-center align-items-md-start justify-content-evenly"
     >
       <!-- Email -->
       <label
@@ -475,7 +715,7 @@
     </div>
     <!-- Message -->
     <div
-      class="mb-3 contactForm__form__messageContainer d-flex flex-column align-items-center align-items-md-start justify-content-evenly"
+      class="my-3 contactForm__form__messageContainer d-flex flex-column align-items-center align-items-md-start justify-content-evenly"
     >
       <label
         for="message"
@@ -492,7 +732,7 @@
     </div>
 
     <!-- Rodo -->
-    <div class="contactForm__form__rodo form-check form-switch my-2">
+    <div class="contactForm__form__rodo form-check form-switch mb-2 mt-3">
       <input
         class="contactForm__form__rodo__switch form-check-input"
         type="checkbox"
