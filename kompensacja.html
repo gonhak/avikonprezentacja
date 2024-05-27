@@ -222,7 +222,7 @@
         
         <!-- Kalkulator !!!!! -->
         <section
-  class="py-5 container-fluid d-flex flex-column align-items-center mt-3"
+  class="py-5 container-fluid d-none d-sm-flex flex-column align-items-center mt-3"
 >
   <!-- Headers -->
   <div class="container d-flex flex-column align-items-center pb-3">
@@ -236,9 +236,61 @@
   <div
     class="container calculator d-flex flex-wrap align-items-start justify-content-center"
   >
-    <!-- Score -->
+    <div
+      class="calculator__results d-flex flex-column justify-content-center align-items-center py-4 mb-3"
+    >
+      <h5 class="mb-3">MOŻESZ ZAOSZCZĘDZIĆ</h5>
+      <div
+        class="calculator__results__scores d-flex justify-content-center align-items-center mt-3"
+      >
+        <!-- PowerSavings -->
+        <div
+          class="calculator__results__scores__container calculator__results__scores__container--power"
+        >
+          <div class="calculator__results__scores__container__indicator"></div>
+          <div
+            class="calculator__results__scores__container__indicator calculator__results__scores__container__indicator--scale"
+            id="moneyIndicator"
+          ></div>
+          <div
+            class="calculator__results__scores__container__indicator calculator__results__scores__container__indicator--cover calculator__results__scores__container__indicator--cover--first"
+          ></div>
+        </div>
 
-    <div class="calculator__results"></div>
+        <div
+          class="calculator__results__scores__container__results d-flex flex-column justify-content-center align-items-center"
+        >
+          <h5
+            class="calculator__results__scores__container__results__header"
+            id="moneyResult"
+          >
+            275,42 ZŁ
+          </h5>
+          <h6
+            class="calculator__results__scores__container__results__subHeader"
+            id="voltageResult"
+          >
+            124,22 W
+          </h6>
+        </div>
+
+        <!-- MoneySavings -->
+        <div
+          class="calculator__results__scores__container calculator__results__scores__container--money"
+        >
+          <div
+            class="calculator__results__scores__container__indicator calculator__results__scores__container__indicator--secondary"
+          ></div>
+          <div
+            class="calculator__results__scores__container__indicator calculator__results__scores__container__indicator--scale calculator__results__scores__container__indicator--scale--secondary"
+            id="powerIndicator"
+          ></div>
+          <div
+            class="calculator__results__scores__container__indicator calculator__results__scores__container__indicator--cover calculator__results__scores__container__indicator--cover--secondary"
+          ></div>
+        </div>
+      </div>
+    </div>
 
     <!-- Calculator inputs -->
     <div
@@ -263,7 +315,7 @@
       <input
         class="calculator__data__input my-4"
         type="number"
-        placeholder="Cena energii elektrycznej "
+        placeholder="Cena prądu "
       />
       <input
         class="calculator__data__input my-4"
