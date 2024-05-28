@@ -264,13 +264,13 @@
             class="calculator__results__scores__container__results__header"
             id="moneyResult"
           >
-            275,42 ZŁ
+            ... zł
           </h5>
           <h6
             class="calculator__results__scores__container__results__subHeader"
             id="voltageResult"
           >
-            124,22 W
+            ... var
           </h6>
         </div>
 
@@ -300,7 +300,7 @@
       <input
         class="calculator__data__input my-3"
         type="number"
-        placeholder="Wartość skuteczna napięcia (V)"
+        placeholder="Wartość skuteczna napięcia (U)"
       />
       <input
         class="calculator__data__input my-4"
@@ -310,19 +310,23 @@
       <input
         class="calculator__data__input my-4"
         type="number"
-        placeholder="Koszty reaktywacyjne* "
-      />
-      <input
-        class="calculator__data__input my-4"
-        type="number"
-        placeholder="Cena prądu "
-      />
-      <input
-        class="calculator__data__input my-4"
-        type="number"
         placeholder="Przesunięcie fazowe (φ) "
       />
-      <button type="button" class="btn calculator__data__button my-3">
+      <input
+        class="calculator__data__input my-4"
+        type="number"
+        placeholder="Koszt reaktywacyjny "
+      />
+      <input
+        class="calculator__data__input my-4"
+        type="number"
+        placeholder="Zmniejszenie mocy biernej  "
+      />
+      <button
+        type="button"
+        class="btn calculator__data__button my-3"
+        id="calcButton"
+      >
         OBLICZ
       </button>
     </div>
@@ -348,7 +352,7 @@
               aria-expanded="true"
               aria-controls="collapseOne"
             >
-              Wartość skuteczna napięcia (V)
+              Wartość skuteczna napięcia (U)
             </button>
           </h2>
           <div
@@ -360,7 +364,8 @@
               class="accordion-body calculator__legend__accordion__item__text py-4"
             >
               W większości domowych instalacji wartość napięcia to 230V, ale
-              warto to potwierdzić na podstawie lokalnych standardów.
+              warto to potwierdzić na podstawie lokalnych standardów
+              elektrycznych lub informacji podanych na rachunku za prąd.
             </div>
           </div>
         </div>
@@ -387,8 +392,10 @@
             <div
               class="accordion-body calculator__legend__accordion__item__text py-4"
             >
-              Wartość prądu zostanie podana na fakturze jako "zużycie prądu" lub
-              "energia pobrana".
+              Wartość prądu zazwyczaj wynosi 15-20A w domowych instalacjach, ale
+              może się różnić w zależności od zużycia energii i ilości
+              podłączonych urządzeń. Informacje te można znaleźć na rachunku za
+              prąd lub poprzez pomiary przy użyciu miernika prądu.
             </div>
           </div>
         </div>
@@ -404,7 +411,7 @@
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              Koszty reaktywacyjne (jeśli dotyczy)
+              Przesunięcie fazowe (φ)
             </button>
           </h2>
           <div
@@ -415,9 +422,10 @@
             <div
               class="accordion-body calculator__legend__accordion__item__text py-4"
             >
-              Jeśli na fakturze występują koszty reaktywacyjne, powinieneś
-              znaleźć tę informację. To może być wyrażone jako opłata za każdy
-              var (PLN/var) lub podobnie.
+              Przesunięcie fazowe między napięciem a prądem zazwyczaj wynosi
+              około 0-30 stopni w domowych instalacjach elektrycznych, ale warto
+              to sprawdzić w dokumentacji urządzenia lub poprzez konsultację z
+              elektrykiem.
             </div>
           </div>
         </div>
@@ -433,7 +441,7 @@
               aria-expanded="false"
               aria-controls="collapseFour"
             >
-              Cena energii elektrycznej
+              Koszt reaktywacyjny za każdy var
             </button>
           </h2>
           <div
@@ -444,9 +452,10 @@
             <div
               class="accordion-body calculator__legend__accordion__item__text py-4"
             >
-              Wartość energii elektrycznej jest zwykle podawana jako cena za
-              kilowatogodzinę (kWh). To jest wartość, która jest zwykle widoczna
-              na fakturze jako "cena energii" lub podobne określenie.
+              Koszt reaktywacyjny za każdy var może różnić się w zależności od
+              dostawcy energii elektrycznej i rodzaju umowy. Informacje te można
+              znaleźć na rachunku za prąd lub poprzez kontakt z dostawcą
+              energii.
             </div>
           </div>
         </div>
@@ -462,7 +471,7 @@
               aria-expanded="false"
               aria-controls="collapseFive"
             >
-              Przesunięcie fazowe (φ)
+              Zmniejszenie mocy biernej
             </button>
           </h2>
           <div
@@ -473,9 +482,10 @@
             <div
               class="accordion-body calculator__legend__accordion__item__text py-4"
             >
-              W większości przypadków w gospodarstwach domowych przesunięcie
-              fazowe jest zwykle bliskie zeru (0 stopni). Jednak, jeśli jesteś w
-              stanie uzyskać tę informację, możesz ją uwzględnić.
+              Zmniejszenie mocy biernej może być określone na podstawie audytu
+              energetycznego lub oceny potrzeb instalacji. Wartości te mogą być
+              różne w zależności od charakterystyki obciążenia elektrycznego w
+              danym budynku lub zakładzie.
             </div>
           </div>
         </div>
@@ -931,5 +941,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Calculator dedicated script -->
+    <script src="js/calculator.min.js"></script>
   </body>
 </html>
