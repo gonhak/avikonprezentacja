@@ -140,7 +140,7 @@
       >
       <a
         class="desktopContainer__navBar__Link mx-2 px-3 py-2 nav-link"
-        href="#contact"
+        href="index.html#contact"
         >Kontakt</a
       >
       <a
@@ -203,7 +203,7 @@
   </div>
 </header>
 
-      
+
       <main>
         <!-- About Us Section -->
         <section class="aboutUs container-fluid py-5">
@@ -212,10 +212,10 @@
   >
     <!-- Headers -->
     <div
-      class="aboutUs__texts container w-md-50 d-flex flex-column pt-2 pb-3 px-0 pb-xxl-2"
+      class="aboutUs__texts container w-md-50 d-flex flex-column py-2 pb-md-0 px-0 pb-xxl-2"
     >
       <h3 class="aboutUs__tittle pb-1">JESTEŚMY KREATYWNI, KILKA SŁÓW O NAS</h3>
-      <h4 class="aboutUs__subTittle pb-2 pb-sm-0 pb-md-2">
+      <h4 class="aboutUs__subTittle m-0">
         NASZE USŁUGI ŚWIADCZYMY JUŻ OD PONAD 20 LAT!
       </h4>
     </div>
@@ -1969,5 +1969,43 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- Prevent Additional Nav Links Loading -->
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        if (
+          window.location.href.endsWith("index.html") ||
+          window.location.href.endsWith("index.html#aboutUs") ||
+          window.location.href.endsWith("index.html#orderStages") ||
+          window.location.href.endsWith("index.html#offer") ||
+          window.location.href.endsWith("index.html#contact") ||
+          window.location.href.endsWith("index.html#work")
+        ) {
+          return;
+        } else {
+          console.log("zmieniam linki");
+
+          const desktopNavLinks = document.querySelectorAll(
+            ".desktopContainer__navBar__Link"
+          );
+          const mobileNavLinks = document.querySelectorAll(
+            ".contentContainer__navContainer__list__element"
+          );
+
+          console.log(desktopNavLinks);
+
+          desktopNavLinks.forEach((link) => {
+            let anchor = link.href.substring(link.href.indexOf("#"));
+            link.href = anchor;
+          });
+
+          mobileNavLinks.forEach((link) => {
+            if (link.href.endsWith("index.html#contact")) {
+              let anchor = link.href.substring(link.href.indexOf("#"));
+              link.href = anchor;
+            }
+          });
+        }
+      });
+    </script>
   </body>
 </html>
