@@ -800,7 +800,10 @@
 
         <!-- Contact Form -->
         <div id="contact">
-          <section class="contactForm container-fluid d-flex flex-column py-5 px-0" id="contactForm">
+          <section
+  class="contactForm container-fluid d-flex flex-column py-5 px-0"
+  id="contactForm"
+>
   <!-- Nagłówki -->
   <div class="container d-flex flex-column py-3 mb-4">
     <h3 class="contactForm__tittle pb-1">MASZ PYTANIE</h3>
@@ -809,6 +812,8 @@
   <!-- Formularz -->
   <form
     class="contactForm__form container d-flex flex-column align-items-center align-items-md-start justify-content-evenly py-3"
+    action="./mailer.php"
+    method="post"
   >
     <!-- Text -->
     <div
@@ -825,6 +830,7 @@
         class="form-control py-2 mt-2"
         required
         id="email"
+        name="email"
         placeholder="Twój adres email..."
       />
     </div>
@@ -844,6 +850,7 @@
         class="form-control py-2 mt-2"
         id="topic"
         required
+        name="topic"
         placeholder="Podaj temat rozmowy..."
       />
     </div>
@@ -860,6 +867,7 @@
         class="form-control py-2 mt-2"
         required
         id="message"
+        name="message"
         placeholder="Twoja wiadomość..."
         rows="2"
       ></textarea>
