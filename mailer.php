@@ -31,9 +31,9 @@ $mail->msgHTML("adres email: " . $_POST["email"] . "\n treść: " . $_POST["mess
 $mail->AltBody = 'HTML messaging not supported';
 
 if (!$mail->send()) {
-    // header("Location: ./messageSentError.html");
+    header("Location: ./messageSentError.html");
 } else {
-    // header("Location: ./messageSentCorrect.html");
+    header("Location: ./messageSentCorrect.html");
 }
 
 die();
