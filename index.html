@@ -1507,10 +1507,10 @@
         class="contact__cards__card contact__cards__card--information d-flex flex-column align-items-center justify-content-center m-2 mt-2"
       >
         <a
-          href="mailto: biuro@avikon.com"
+          href="mailto: biuro@avikon.pl"
           class="contact__cards__card__text d-flex justify-content-center align-items-center"
         >
-          biuro@avikon.com
+          biuro@avikon.pl
         </a>
       </div>
     </div>
@@ -1814,9 +1814,9 @@
       <ul class="nav flex-column">
         <li class="nav-item mb-2">
           <a
-            href="mailto: biuro@avikon.com"
+            href="mailto: biuro@avikon.pl"
             class="nav-link p-0 text-body-secondary"
-            >biuro@avikon.com</a
+            >biuro@avikon.pl</a
           >
         </li>
         <li class="nav-item mb-2">
@@ -1920,16 +1920,12 @@
         ) {
           return;
         } else {
-          console.log("zmieniam linki");
-
           const desktopNavLinks = document.querySelectorAll(
             ".desktopContainer__navBar__Link"
           );
           const mobileNavLinks = document.querySelectorAll(
             ".contentContainer__navContainer__list__element"
           );
-
-          console.log(desktopNavLinks);
 
           desktopNavLinks.forEach((link) => {
             let anchor = link.href.substring(link.href.indexOf("#"));

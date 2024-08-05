@@ -11,8 +11,8 @@ $smtpUsername = "avikonformularz@o2.pl"; // adres e-mail adresata
 $smtpPassword = getenv("O2PASS"); // hasło do maila adresata
 $emailFrom = "avikonformularz@o2.pl"; // adres e-mail adresata
 $emailFromName = "avikonformularz@o2.pl"; // nazwa adresata
-$emailTo = "natanek291@gmail.com"; // adres e-mail odbiorcy
-$emailToName = "natanek291@gmail.com"; // imię adresata
+$emailTo = "biuro@avikon.pl"; // adres e-mail odbiorcy
+$emailToName = "biuro@avikon.pl"; // imię adresata
 
 $mail = new PHPMailer;
 $mail->isSMTP();
